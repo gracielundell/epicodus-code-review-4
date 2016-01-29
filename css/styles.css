@@ -1,7 +1,25 @@
+body {
+  font-size: 20px;
+  color: red;
+  font-family: "Lobster", cursive;
+}
+
+button {
+  background-color: red;
+  color: white;
+}
+
 .jumbotron {
   text-align: center;
+  background-color: green;
+  color: white;
 }
 
 .finalOrder {
   display: none;
+  background-size: 100px;
+}
+
+.checkbox {
+  color: red;
 }

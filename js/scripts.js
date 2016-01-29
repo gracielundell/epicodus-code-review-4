@@ -32,12 +32,9 @@ $(document).ready(function() {
 
     $(".finalOrder").show();
     $("p#customPizza").append(("<span class='pizzaPrice'>" + createPizza.price()) + ".00" + "</span>");
-
-
+    $("ul#finalToppings").append("<span class='toppings'><li>" + pizzaToppings + "</li></span>");
 
     $("form").hide();
-
-
 
   });
 
