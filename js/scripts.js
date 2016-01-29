@@ -30,6 +30,8 @@ $(document).ready(function() {
     });
     var createPizza = new Pizza(pizzaSize, pizzaToppings);
 
-    $("ul#customPizza").append(("<li><span class='pizza'>" + createPizza.price()) + "</span></li>");
+    $("p#customPizza").append(("<span class='pizzaPrice'>" + createPizza.price()) + ".00" + "</span>");
+
   });
+
 });
