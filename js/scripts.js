@@ -3,7 +3,6 @@ function Pizza (pizzaSize, pizzaToppings) {
   this.toppings = pizzaToppings;
 };
 
-
 Pizza.prototype.price = function() {
   var total = 5;
 
