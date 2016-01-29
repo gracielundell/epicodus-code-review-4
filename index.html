@@ -12,27 +12,36 @@
 
     <div class="container">
       <form>
-        <div class="form group">
-          <h3>Please select a pizza size:</h3>
+        <div class="form-group">
+          <label>Please select a pizza size:</label>
           <select class="form-control size">  <!-- price dependent -->
+            <option value="choose">Select Size</option>
             <option value="small">Small $5</option>
-            <option value="med">Medium $10</option>
-            <option value="large">Large $15</option>
+            <option value="medium">Medium $10</option>
+            <option value="large">Large $12</option>
           </select>
           <label for="toppings">Choose toppings: </label>
         </div>
-
-
         <div class="checkbox toppings">
-          <label><input type="checkbox" value="">Olives</label>
+            <label>
+            <input type="checkbox" value="Olives">Olives</label>
+          </div>
+          <div class="checkbox toppings">
+            <label><input type="checkbox" value="Feta">Feta</label>
+          </div>
+          <div class="checkbox toppings">
+            <label><input type="checkbox" value="Tomatoes">Tomatoes</label>
+          </div>
+          <div class="checkbox toppings">
+            <label><input type="checkbox" value="Mushrooms">Mushrooms</label>
+          </div>
+          <div class="checkbox toppings">
+            <label><input type="checkbox" value="Spinach">Spinach</label>
+          </div>
+          <div class="checkbox toppings">
+            <label><input type="checkbox" value="Pineapple">Pineapple</label>
+          </div>
         </div>
-        <div class="checkbox toppings">
-          <label><input type="checkbox" value="">Feta</label>
-        </div>
-        <div class="checkbox toppings">
-          <label><input type="checkbox" value="">Tomatoes</label>
-        </div>
-
           <button type="submit" class="btn btn-primary btn">Order Pizza</button>
       </form>
       <ul id="customPizza">
