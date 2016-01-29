@@ -19,7 +19,7 @@ Pizza.prototype.addSize = function() {
 
 Pizza.prototype.addToppings = function() {
   var total = this.addSize;
-  if (this.topping === "Mlives" || this.topping === "Mushrooms" || this.topping === "Pinapple" ||) {
+  if (this.topping === "Olives" || this.topping === "Mushrooms" || this.topping === "Pinapple" ||) {
     total += 2;
   }
 }

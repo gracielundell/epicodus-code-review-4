@@ -5,8 +5,9 @@ describe("Pizza", function() {
     expect(testPizza.size).to.equal("small");
   });
 
-  // it("will allow multiple topping choices to be applied", function() {
-  //   var testPizza = new Pizza("")
-  // })
+  it("will calculate price for a full pizza", function() {
+    var testPizza = new Pizza("olives", "small")
+    expect(testPizza.fullPizza).to.equal(7);
+  });
 
 });
