@@ -12,32 +12,32 @@
 
     <div class="container">
       <form>
-        <h3>Please select a pizza size:</h3>
-        <select id="size">  <!-- price dependent -->
-          <option value="small">Small</option>
-          <option value="med">Medium</option>
-          <option value="large">Large</option>
-        </select>
-
-        <h3>Please Select The number of topping you would like </h3>
-        <select id="toppings">
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-
-        <!-- <h3>Please Select Another Topping: </h3>
-        <select id="toppings">
-          <option value="tomatoes">Tomatoes</option>
-          <option value="peppers">Bell Peppers</option>
-          <option value="spinach">Spinach</option>
-        </select> -->
-
+        <div class="form group">
+          <h3>Please select a pizza size:</h3>
+          <select class="form-control size">  <!-- price dependent -->
+            <option value="small">Small $5</option>
+            <option value="med">Medium $10</option>
+            <option value="large">Large $15</option>
+          </select>
+          <label for="toppings">Choose toppings: </label>
         </div>
+
+
+        <div class="checkbox toppings">
+          <label><input type="checkbox" value="">Olives</label>
+        </div>
+        <div class="checkbox toppings">
+          <label><input type="checkbox" value="">Feta</label>
+        </div>
+        <div class="checkbox toppings">
+          <label><input type="checkbox" value="">Tomatoes</label>
+        </div>
+
           <button type="submit" class="btn btn-primary btn">Order Pizza</button>
-        </div>
       </form>
-    </div>
+      <ul id="customPizza">
 
+      </ul>
+    </div>
   </body>
 </html>
