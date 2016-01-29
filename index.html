@@ -8,7 +8,9 @@
     <title>Pizza Time</title>
   </head>
   <body>
-    <h1>It's Pizza Time!</h1>
+    <div class="jumbotron">
+      <h1>It's Pizza Time!</h1>
+    </div>
 
     <div class="container">
       <form>
@@ -41,9 +43,18 @@
           <div class="checkbox toppings">
             <label><input type="checkbox" value="Pineapple">Pineapple</label>
         </div>
-    </div>
-          <button type="submit" class="btn btn-primary btn">Order Pizza</button>
+        <button type="submit" class="btn btn-primary btn">Order Pizza</button>
       </form>
-      <p id="customPizza">Your Pizza comes to: $<span id="pizzaPrice"></span></p>
+
+      <div class="finalOrder">
+        <p id="customPizza">Your Pizza comes to: $<span id="pizzaPrice"></span></p>
+
+        <ul id="finalToppings">Toppings:
+
+        </ul>
+      </div>
+
+    </div>
+
   </body>
 </html>

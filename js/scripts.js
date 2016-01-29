@@ -29,7 +29,15 @@ $(document).ready(function() {
     });
     var createPizza = new Pizza(pizzaSize, pizzaToppings);
 
+
+    $(".finalOrder").show();
     $("p#customPizza").append(("<span class='pizzaPrice'>" + createPizza.price()) + ".00" + "</span>");
+
+
+
+    $("form").hide();
+
+
 
   });
 
