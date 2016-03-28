@@ -29,10 +29,12 @@ $(document).ready(function() {
     });
     var createPizza = new Pizza(pizzaSize, pizzaToppings);
 
-
     $(".finalOrder").show();
     $("p#customPizza").append(("<span class='pizzaPrice'>" + createPizza.price()) + ".00" + "</span>");
-    $("ul#finalToppings").append("<span class='toppings'><li>" + pizzaToppings + "</li></span>");
+
+    pizzaToppings.forEach(function(topping) {
+      $("ul#finalToppings").append("<span class='toppings'><li>" + topping + "</li></span>");
+    });
 
     $("form").hide();
 
